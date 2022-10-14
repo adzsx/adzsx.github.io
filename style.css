@@ -1,4 +1,57 @@
-root{
+:root{
 	/*Dracula color scheme*/
 	--bg: #282a36;
+	--bg-light:#44475a;
+	--text: #f8f8f2;
+
+	/*colors*/
+	--red: #ff5555;
+	--oragne: #ffb86c;
+	--yellow: #f1fa8c;
+	--green: #50fa7b;
+	--blue: #8be9fd;
+	--purple: #bd93f9;
+}
+
+html, body{
+	background-color: var(--bg);
+	font-family: 'Source Code Pro', monospace;
+	color: var(--text);
+	margin: 0;
+	width: 100%;
+	scroll-behavior: smooth;
+}
+
+
+.page{
+	position: relative;
+	min-height: 100vh;
+	top: 10px;
+}
+
+.content{
+	position: relative;
+	overflow: scroll;
+	width: 95%;
+	margin-left: 2.5%;
+	font-size: 20px;
+	top: 70px;
+}
+
+.title{
+	position: inherit;
+	text-align: center;
+	top: 0;
+	color: var(--blue);
+	font-size: 42px;
+
+	/* gradient
+	background: -webkit-linear-gradient(left, var(--green), var(--blue));
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   */
+}
+
+#projects{
+	background-color: var(--bg-light);
 }
