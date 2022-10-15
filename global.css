@@ -1,0 +1,31 @@
+:root{
+	/*Dracula color scheme*/
+	--bg: #282a36;
+	--bg-light:#44475a;
+	--text: #f8f8f2;
+
+	/*colors*/
+	--red: #ff5555;
+	--oragne: #ffb86c;
+	--yellow: #f1fa8c;
+	--green: #50fa7b;
+	--blue: #8be9fd;
+	--purple: #bd93f9;
+}
+
+html, body{
+	background-color: var(--bg);
+	font-family: 'Source Code Pro', monospace;
+	color: var(--text);
+	margin: 0;
+	width: 100%;
+	scroll-behavior: smooth;
+}
+
+.title{
+	position: relative;
+	margin-left: 37%;
+	text-align: center;
+	color: var(--blue);
+	font-size: 42px;
+}
