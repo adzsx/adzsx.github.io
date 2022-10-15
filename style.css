@@ -15,12 +15,6 @@
 	overflow: visible;
 }
 
-/* text-gradient
-background: -webkit-linear-gradient(left, var(--green), var(--blue));
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-*/
-
 #project-title{
 	color: var(--green);
 	margin-left: 41%;

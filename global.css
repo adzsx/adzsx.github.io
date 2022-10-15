@@ -29,3 +29,10 @@ html, body{
 	color: var(--blue);
 	font-size: 42px;
 }
+
+.link{
+	position: relative;
+	color: var(--oragne);
+	text-decoration: none;
+	font-size: 20px;
+}
