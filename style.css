@@ -1,34 +1,80 @@
 .page{
 	position: relative;
 	min-height: 100vh;
-	top: 10px;
+	scroll-snap-type: y mandatory;
 }
 
 .page-content{
 	position: relative;
 	overflow: scroll;
-	width: 60%;
-	margin-left: 17%;
 	font-size: 20px;
 	top: 70px;
 	height: 100%;
-	overflow: visible;
+	overflow: visible; 
+	text-align: center;
 }
+
+/*
+.page-content{
+	position: relative;
+	overflow: scroll;
+	width: 80%;
+	margin-left: 9%;
+	font-size: 20px;
+	top: 70px;
+	height: 100%;
+	overflow: visible; 
+}
+*/
+
+.navbar{
+	width: 5rem;
+	height: 100vh;
+	position: fixed;
+	background: var(--bg-nav);
+	display: flex;
+}
+
+.icon{
+	height: 70px;
+}
+.navbar-items{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#navbar-items:last-child{
+	margin-top: auto;
+}
+
+#theme{
+	background-color: var(--bg-light);
+	border: none;
+}
+
 
 #project-title{
 	color: var(--green);
-	margin-left: 41%;
 }
 
 .text{
-	overflow: visible;;
+	font-size: 30px;
+	overflow: visible;
 	height: 100%;
 	position: relative;
-	top: 50px;
+	top: 100px;
+	text-align: center;
+	left: 18%;
 }
 
 .small-title{
+	text-align: center;
 	font-size: 40px;
+	font-weight: bolder;
 	height: 10px;
 }
 
@@ -36,8 +82,4 @@
 	position: relative;
     width: 40%;
     margin-left: 10%;
-}
-
-#projects{
-	background-color: var(--bg-light);
 }
