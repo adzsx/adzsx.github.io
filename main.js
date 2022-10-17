@@ -2,6 +2,9 @@ const theme = document.getElementById("theme");
 var root = document.querySelector(':root');
 
 var is = localStorage["theme"]
+if (is == null){
+    
+}
 
 theme.onclick = function(){
     if (is == "dark"){

@@ -27,6 +27,7 @@
 }
 */
 
+
 .navbar{
 	width: 5rem;
 	height: 100vh;
@@ -37,7 +38,16 @@
 
 .icon{
 	height: 70px;
+	animation: all 0.5s;
+	animation-duration: 2s;
 }
+
+.icon:hover{
+	animation: all 0.5s;
+	animation-duration: 2s;
+	filter: invert(67%) sepia(9%) saturate(2715%) hue-rotate(82deg) brightness(121%) contrast(96%);	
+}
+
 .navbar-items{
 	list-style: none;
 	padding: 0;
@@ -54,11 +64,6 @@
 #theme{
 	background-color: var(--bg-light);
 	border: none;
-}
-
-
-#project-title{
-	color: var(--green);
 }
 
 .text{

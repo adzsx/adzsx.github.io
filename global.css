@@ -28,7 +28,7 @@ body::-webkit-scrollbar-thumb{
 main{
 	margin-left: 5rem;
 }
-
+ 
 html, body{
 	font-family: 'Source Code Pro', monospace;
 	color: var(--text);
@@ -37,6 +37,8 @@ html, body{
 	scroll-behavior: smooth;
 	padding: 0;
 	margin: 0;
+	text-align: center;
+	animation: all 0.5s;
 }
 
 .title{
@@ -44,6 +46,7 @@ html, body{
 	text-align: center;
 	color: var(--blue);
 	font-size: 42px;
+	text-align: center;
 }
 
 .link{
