@@ -56,3 +56,12 @@ html, body{
 	text-decoration: none;
 	font-size: 20px;
 }
+
+button{
+	position: relative;
+	background-color: var(--blue);
+	color: var(--bg);
+	font-family: 'Source Code Pro', monospace;
+	border-radius: 30px;
+	border: none;
+}
