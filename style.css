@@ -34,18 +34,20 @@
 	position: fixed;
 	background: var(--bg-nav);
 	display: flex;
+	animation: all 2s;
+	animation-duration: all 2s;
 }
 
-.icon{
+.nav-icon{
 	height: 70px;
-	animation: all 0.5s;
-	animation-duration: 2s;
+	animation: all 2s;
+	animation-duration: all 2s;
 }
 
-.icon:hover{
-	animation: all 0.5s;
-	animation-duration: 2s;
-	filter: invert(67%) sepia(9%) saturate(2715%) hue-rotate(82deg) brightness(121%) contrast(96%);	
+.nav-icon:hover{
+	animation: all 2s;
+	animation-duration: all 2s;
+	/*filter: invert(67%) sepia(9%) saturate(2715%) hue-rotate(82deg) brightness(121%) contrast(96%);*/
 }
 
 .navbar-items{
@@ -55,6 +57,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	animation: all 2s;
+	animation-duration: all 2s;
 }
 
 #navbar-items:last-child{
@@ -67,6 +71,7 @@
 }
 
 .text{
+	color: var(--text);
 	font-size: 30px;
 	overflow: visible;
 	height: 100%;
@@ -74,6 +79,23 @@
 	top: 100px;
 	text-align: center;
 	left: 18%;
+	text-decoration: none;
+}
+
+.project{
+	position: absolute;
+	top: 400%;
+	left: 37%;
+	animation: all 1s;
+	height: 20rem;
+	width: 30rem;
+	background-color: var(--bg-nav);
+}
+
+.project-title{
+	color: var(--text);
+	text-decoration: none;
+	font-size: 30px;
 }
 
 .small-title{
@@ -88,3 +110,4 @@
     width: 40%;
     margin-left: 10%;
 }
+
