@@ -22,7 +22,7 @@ theme.onclick = function(){
     }else{
         root.style.setProperty('--bg', "#282a36");
         root.style.setProperty('--text', "#f8f8f2");
-        root.style.setProperty('--bg-lirhgt', "#44475a");
+        root.style.setProperty('--bg-light', "#44475a");
         root.style.setProperty('--red', "ff5555");
         root.style.setProperty('--orange', "#ffb86c");
         root.style.setProperty('--yellow', "#f1fa8c");

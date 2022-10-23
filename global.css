@@ -28,6 +28,13 @@ body::-webkit-scrollbar-thumb{
 main{
 	margin-left: 5rem;
 }
+
+@media only screen and (max-width: 600px) {
+	main{
+		margin-left: 0px;
+	}
+}
+
  
 html, body{
 	font-family: 'Source Code Pro', monospace;
@@ -58,6 +65,7 @@ html, body{
 	font-size: 20px;
 }
 
+
 button{
 	position: relative;
 	background-color: var(--blue);
@@ -65,4 +73,14 @@ button{
 	font-family: 'Source Code Pro', monospace;
 	border-radius: 30px;
 	border: none;
+}
+
+@media only screen and (max-width: 600px) {
+	.title{
+		font-size: 36px;
+	}
+
+	.link{
+		font-size: 15px;
+	}
 }

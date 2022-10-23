@@ -82,10 +82,12 @@
 	text-decoration: none;
 }
 
+
 .project{
 	position: absolute;
-	top: 400%;
-	left: 37%;
+	top: 500%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	animation: all 1s;
 	height: 130px;
 	width: 500px;
@@ -121,3 +123,17 @@
     margin-left: 10%;
 }
 
+@media only screen and (max-width: 600px) {
+	.navbar{
+		display: none;
+	}
+
+	.page-content{
+		width: 100%;
+		font-size: 20px;
+	}
+
+	.text, .project-title, .small-title, .project, #home-content{
+		font: 15px;
+	}
+}
