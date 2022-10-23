@@ -32,7 +32,7 @@
 	width: 5rem;
 	height: 100vh;
 	position: fixed;
-	background: var(--bg-nav);
+	background: var(--bg-light);
 	display: flex;
 	animation: all 2s;
 	animation-duration: all 2s;
@@ -87,15 +87,25 @@
 	top: 400%;
 	left: 37%;
 	animation: all 1s;
-	height: 20rem;
-	width: 30rem;
-	background-color: var(--bg-nav);
+	height: 130px;
+	width: 500px;
+	background-color: var(--bg-light);
+	border-radius: 30px;
 }
 
 .project-title{
+	width: 175px;
+	position: relative;
 	color: var(--text);
 	text-decoration: none;
 	font-size: 30px;
+	left: 225px;
+}
+
+.project-icon{
+	position: relative;
+	left: -135px;
+	top: -120px;
 }
 
 .small-title{

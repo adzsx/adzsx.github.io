@@ -10,7 +10,7 @@ theme.onclick = function(){
     if (is == "dark"){
         root.style.setProperty('--bg', "#f8f8f2");
         root.style.setProperty('--text', "#282a36");
-        root.style.setProperty('--bg-nav', "#bbbbbb");
+        root.style.setProperty('--bg-light', "#bbbbbb");
         root.style.setProperty('--red', "#cc0000");
         root.style.setProperty('--orange', "#cd5b00");
         root.style.setProperty('--yellow', "#ffeb00");
@@ -22,7 +22,7 @@ theme.onclick = function(){
     }else{
         root.style.setProperty('--bg', "#282a36");
         root.style.setProperty('--text', "#f8f8f2");
-        root.style.setProperty('--bg-nav', "#44475a");
+        root.style.setProperty('--bg-lirhgt', "#44475a");
         root.style.setProperty('--red', "ff5555");
         root.style.setProperty('--orange', "#ffb86c");
         root.style.setProperty('--yellow', "#f1fa8c");
