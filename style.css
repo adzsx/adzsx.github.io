@@ -12,6 +12,7 @@
 	height: 100%;
 	overflow: visible; 
 	text-align: center;
+	justify-content: center;
 }
 
 /*
@@ -47,7 +48,6 @@
 .nav-icon:hover{
 	animation: all 2s;
 	animation-duration: all 2s;
-	/*filter: invert(67%) sepia(9%) saturate(2715%) hue-rotate(82deg) brightness(121%) contrast(96%);*/
 }
 
 .navbar-items{
@@ -93,13 +93,24 @@
 	width: 500px;
 	background-color: var(--bg-light);
 	border-radius: 30px;
+	transition: all 0.5s;
+	text-decoration: none;
+}
+
+.project:hover{
+	top: 460%;
+	background-color: #3a3e4d;
+}
+
+.project:active{
+	transition: 0.05s;
+	top: 500%;
 }
 
 .project-title{
 	width: 175px;
 	position: relative;
 	color: var(--text);
-	text-decoration: none;
 	font-size: 30px;
 	left: 225px;
 }
@@ -128,12 +139,13 @@
 		display: none;
 	}
 
-	.page-content{
+	.page-content,  #home-content{
 		width: 100%;
-		font-size: 20px;
+		font-size: 25px;
+		position: relative;
 	}
 
-	.text, .project-title, .small-title, .project, #home-content{
-		font: 15px;
+	.text, .project-title, .small-title, .project{
+		font-size: 30px;
 	}
 }
