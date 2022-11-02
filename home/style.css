@@ -37,7 +37,7 @@ html, body{
 	top: 5rem
 }
 
-#input-search{
+#search-inp{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -52,7 +52,7 @@ html, body{
     box-shadow: 0px 0px 10px #202020;
 }
 
-.search{
+.bar{
     background-color: none;
     position: absolute;
     top: 50%;
@@ -60,3 +60,21 @@ html, body{
     transform: translate(-50%, -50%);
 }
 
+#search-img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+#search-btn{
+	height: 62px;
+	width: 70px;
+	color: var(--bg-light);
+	background-color: var(--bg-light);
+	border: none;
+	position: absolute;
+	left: 78%;
+	border-radius: 10px;
+}
