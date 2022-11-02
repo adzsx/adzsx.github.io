@@ -5,12 +5,14 @@
 	--text: #f8f8f2;
 
 	/*colors*/
-	--red: #ff5555;
-	--oragne: #ffb86c;
-	--yellow: #f1fa8c;
-	--green: #50fa7b;
-	--blue: #8be9fd;
-	--purple: #bd93f9;
+	--color1: #ff5555;
+	--color2: #ffb86c;
+	--color3: #f1fa8c;
+	--color4: #50fa7b;
+	--color5: #8be9fd;
+	--color6: #bd93f9;
+
+
 }
 
 body::-webkit-scrollbar{
@@ -22,7 +24,7 @@ body::-webkit-scrollbar-track{
 }
 
 body::-webkit-scrollbar-thumb{
-    background: var(--green);
+    background: var(--color4);
 }
 
 main{
@@ -52,7 +54,7 @@ html, body{
 .title{
 	position: relative;
 	text-align: center;
-	color: var(--blue);
+	color: var(--color5);
 	font-size: 42px;
 	text-align: center;
 	top: 5rem
@@ -60,7 +62,7 @@ html, body{
 
 .link{
 	position: relative;
-	color: var(--oragne);
+	color: var(--color2);
 	text-decoration: none;
 	font-size: 20px;
 }
@@ -68,7 +70,7 @@ html, body{
 
 button{
 	position: relative;
-	background-color: var(--blue);
+	background-color: var(--color5);
 	color: var(--bg);
 	font-family: 'Source Code Pro', monospace;
 	border-radius: 30px;

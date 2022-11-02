@@ -143,6 +143,7 @@
 		width: 100%;
 		font-size: 25px;
 		position: relative;
+		text-align: center;
 	}
 
 	.text, .project-title, .small-title, .project{
