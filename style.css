@@ -130,9 +130,36 @@
 
 
 /* Contact page rules */
-.contact-form{
-	position: absolute;
-	top: 1500%;
+
+#email{
+	position: relative;
+}
+
+.input{
+	position: relative;
+	top: 100px;
+	background-color: var(--bg-light);
+	border: none;
+	height: 50px;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+.input::placeholder{
+	color: var(--text)
+}
+
+#email-content{
+	width: 50%;
+	height: 20vh;
+
+}
+
+
+#github{
+	display: none;
+	position: relative;
+	top: 100%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	animation: all 1s;
@@ -143,8 +170,8 @@
 	text-decoration: none;
 }
 
-.contact-form:hover{
-	top: 1480%;
+#github:hover{
+	top: 290%;
 }
 
 .contact-icon{
