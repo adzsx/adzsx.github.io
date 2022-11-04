@@ -40,9 +40,11 @@
 }
 
 .nav-icon{
-	height: 70px;
+	height: 50px;
 	animation: all 2s;
 	animation-duration: all 2s;
+	margin-bottom: 30px;
+	filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(100%) contrast(112%);
 }
 
 .nav-icon:hover{
@@ -53,16 +55,15 @@
 .navbar-items{
 	list-style: none;
 	padding: 0;
-	margin: 0;
-	display: flex;
+	margin: auto;
+	display: block;
+	position: absolute;
+	margin-top: 25px;
+	margin-bottom: 20px;
 	flex-direction: column;
 	align-items: center;
 	animation: all 2s;
 	animation-duration: all 2s;
-}
-
-#navbar-items:last-child{
-	margin-top: auto;
 }
 
 #theme{
