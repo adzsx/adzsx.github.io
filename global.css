@@ -1,30 +1,19 @@
 :root{
-	/*Dracula color scheme*/
+	/*Dracula color scheme
 	--bg: #282a36;
 	--bg-light: #44475a;
 	--text: #f8f8f2;
+	--title: #8be9fd;
+	*/
 
-	/*colors*/
-	--color1: #ff5555;
-	--color2: #ffb86c;
-	--color3: #f1fa8c;
-	--color4: #50fa7b;
-	--color5: #8be9fd;
-	--color6: #bd93f9;
+	
+	--bg: #121212;
+	--bg-light: #212121;
+	--text: #ffffff;
+	--title: #00c9db;
+	--hover: #353535;
+	--link: #005fdb;
 
-
-}
-
-body::-webkit-scrollbar{
-	width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track{
-    background: var(--bg);
-}
-
-body::-webkit-scrollbar-thumb{
-    background: var(--color4);
 }
 
 main{
@@ -54,7 +43,7 @@ html, body{
 .title{
 	position: relative;
 	text-align: center;
-	color: var(--color5);
+	color: var(--title);
 	font-size: 42px;
 	text-align: center;
 	top: 5rem
@@ -62,7 +51,7 @@ html, body{
 
 .link{
 	position: relative;
-	color: var(--color2);
+	color: var(--link);
 	text-decoration: none;
 	font-size: 20px;
 }
@@ -70,7 +59,7 @@ html, body{
 
 button{
 	position: relative;
-	background-color: var(--color5);
+	background-color: var(--title);
 	color: var(--bg);
 	font-family: 'Source Code Pro', monospace;
 	border-radius: 30px;
