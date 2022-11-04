@@ -50,6 +50,10 @@
 	filter: invert(67%) sepia(14%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(90%);
 }
 
+.nav-icon:active{
+	transform: translate(0, 5px);
+}
+
 .navbar-items{
 	list-style: none;
 	padding: 0;
