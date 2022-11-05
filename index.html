@@ -57,19 +57,16 @@
 			<div class="page-content">
 				<h class="title">Contact</h>
 
-					<div class="contact-form" id="email">
-						<input placeholder="Name" class="input" id="email-name">
-						<input placeholder="Subject" class="input" id="email-subject">
-						<input placeholder="Your mail" class="input" id="email-addr">
-						<textarea placeholder="Write something..." class="input" id="email-content">
+					<form action="https://formsubmit.co/adzsx@proton.me" method="POST">
+						<input type="text" name="name" required placeholder="Your name" class="input" id="email-name">
+						<input type="email" name="email" required placeholder="Your mail" class="input" id="email-addr">
+						<textarea placeholder="Write something..." class="input" id="email-content"></textarea>
+						<button type="submit" class="input" id="email-send"><img src="./images/icons/send.svg" height="100px"></button>
+				   </form> 
 
-						</textarea>
-						<button class="input" id="email-send"><img src="./images/icons/send.svg" height="100px"></button>
-					</div>
-
-					<!-- <a class="contact-form" id="github" href="https://github.com/adzsx">
+					<a class="contact-form" id="github" href="https://github.com/adzsx">
 						<img src="./images/icons/github.svg" height="50px" class="contact-icon">
-					</a> -->
+					</a>
 			</div>
 		</section>
 	</main>

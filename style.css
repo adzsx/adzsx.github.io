@@ -139,6 +139,7 @@
 	position: relative;
 	top: 100px;
 	background-color: var(--bg-light);
+	color: var(--text);
 	border: none;
 	height: 50px;
 	font-size: 20px;
