@@ -13,7 +13,6 @@
 	<title>Personal website</title>
 </head>
 <body>
-	
 
 	<nav class="navbar">
 		<ul class="navbar-items">
@@ -44,11 +43,13 @@
 		<section id="projects" class="page">
 			<div class="page-content">
 				<h class="title">Projects</h>
-
-				<a href="./password" class="project">
-						<p class="project-title">Password<br>Generator</p>
-						<img id="password-icon" class="project-icon" src="./images/projects/lock_no-bg.png" height="100" width="110">
-				</a>
+ 
+				<div class="project" id="xcrack">
+					<a href="./xcrack">
+						<p class="project-title">XCrack</p>
+						<img id="xcrack-icon" class="project-icon" src="./images/projects/lock-open.svg" height="50" width="50">
+					</a>	
+				</div>
 
 			</div>
 		</section>
@@ -58,10 +59,10 @@
 				<h class="title">Contact</h>
 
 					<form action="https://formsubmit.co/adzsx@proton.me" method="POST">
-						<input type="text" name="name" required placeholder="Your name" class="input" id="email-name">
-						<input type="email" name="email" required placeholder="Your mail" class="input" id="email-addr">
-						<textarea placeholder="Write something..." class="input" id="email-content"></textarea>
-						<button type="submit" class="input" id="email-send"><img src="./images/icons/send.svg" height="100px"></button>
+						<input type="email" name="E-Mail" required placeholder="Your mail" class="input" id="email-addr">
+						<input type="text" name="Subject" required placeholder="Header" class="input" id="email-name">
+						<textarea type="email" name="email" placeholder="Write something..." class="input" id="email-content"></textarea>
+						<button type="submit" class="input" id="email-send"><img src="./images/icons/send.svg" height="100px" id="email-send-img"></button>
 				   </form> 
 
 					<a class="contact-form" id="github" href="https://github.com/adzsx">

@@ -88,16 +88,22 @@
 }
 
 
+
+
 /* Projects page */
 
-.project{
+#xcrack{
 	position: absolute;
-	top: 500%;
+	top: 300px;
 	left: 50%;
 	transform: translate(-50%, -50%);
+
+}
+
+.project{
+	width: 330px;
+	height: 100px;
 	animation: all 1s;
-	height: 130px;
-	width: 500px;
 	background-color: var(--bg-light);
 	border-radius: 30px;
 	transition: all 0.5s;
@@ -105,27 +111,27 @@
 }
 
 .project:hover{
-	top: 460%;
+	transform: translate(0, -10px);
 	background-color: var(--hover);
 }
 
 .project:active{
 	transition: 0.05s;
-	top: 500%;
+	transform: translate(0, 10px);
 }
 
 .project-title{
+	position: absolute;
 	width: 175px;
-	position: relative;
 	color: var(--text);
 	font-size: 30px;
-	left: 225px;
+	left: 130px;
 }
 
 .project-icon{
-	position: relative;
-	left: -135px;
-	top: -120px;
+	position: absolute;
+	left: 50px;
+	top: 20px;
 }
 
 
@@ -178,6 +184,11 @@
 .contact-icon{
 	filter: invert(100%) sepia(15%) saturate(1348%) hue-rotate(274deg) brightness(123%) contrast(110%);
 	margin-top: 5px;
+}
+
+
+#email-send-img{
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
 }
 
 @media only screen and (max-width: 600px) {

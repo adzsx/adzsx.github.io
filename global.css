@@ -6,13 +6,22 @@
 	--title: #8be9fd;
 	*/
 
-	
+	/*Tokyo night scheme*/
+	--bg: #16161e; 
+	--bg-light: #1a1b26;
+	--text: #ffffff;
+	--title: #00afbe;
+	--hover: #363850;
+	--link: #005fdb;
+
+	/*IDK
 	--bg: #121212;
 	--bg-light: #212121;
 	--text: #ffffff;
 	--title: #00c9db;
 	--hover: #353535;
 	--link: #005fdb;
+	*/
 
 }
 
