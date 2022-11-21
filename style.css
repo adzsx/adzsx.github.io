@@ -157,9 +157,32 @@
 }
 
 #email-content{
-	width: 50%;
+	position: relative;
+	width: 90%;
 	height: 20vh;
+	top: 120px;
 
+}
+
+#email-send{
+	height: 20vh;
+	width: 120px;
+	position: relative;
+	top: 75px;
+}
+
+#email-addr{
+	position: relative;
+	top: 100px;
+	left: -320px;
+	width: 30%
+}
+
+#email-head{
+	position: relative;
+	top: 100px;
+	left: -330px;
+	width: 30%;
 }
 
 
