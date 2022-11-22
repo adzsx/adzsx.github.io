@@ -162,42 +162,47 @@
 	background-color: var(--hover);
 }
 
+#form{
+	position: relative;
+	left: -130px;
+}
+
 #email-content{
 	position: absolute;
 	width: 70%;
 	height: 20vh;
-	top: 250px;
+	top: 300px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
 }
 
 #email-send{
-	height: 20vh;
-	width: 20vh;
-	position: relative;
-	top: 155px;
-	left: 370px;
+	height: 260px;
+	width: 260px;
+	position: absolute;
+	top: 140px;
+	left: 1580px;
 }
 
 #email-addr{
-	position: relative;
-	top: -20px;
-	left: -170px;
-	width: 20%;
+	position: absolute;
+	top: 140px;
+	left: 920px;
+	width: 35%;
 }
 
 #email-head{
-	position: relative;
-	top: -20px;
-	left: -170px;
-	width: 20%;
+	position: absolute;
+	top: 140px;
+	left: 275px;
+	width: 34%;
 }
 
 
 #github{
-	position: relative;
-	top: 400px;
+	position: absolute;
+	top: 600px;
 	transform: translate(-50%, -50%);
 	animation: all 1s;
 	height: 60px;
@@ -208,7 +213,7 @@
 }
 
 #github:hover{
-	top: 390px;
+	top: 590px;
 }
 
 .contact-icon{
@@ -222,6 +227,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+	.project{
+		width: 90%;
+	}
+
 	.navbar{
 		display: none;
 	}
@@ -236,4 +245,9 @@
 	.text, .project-title, .small-title, .project{
 		font-size: 30px;
 	}
+
+	#email-content{
+		width: 90%;
+	}
+
 }
