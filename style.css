@@ -157,40 +157,41 @@
 }
 
 #email-content{
-	position: relative;
-	width: 90%;
+	position: absolute;
+	width: 70%;
 	height: 20vh;
-	top: 120px;
+	top: 300px;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
 }
 
 #email-send{
 	height: 20vh;
-	width: 120px;
+	width: 20vh;
 	position: relative;
-	top: 75px;
+	top: 155px;
+	left: 370px;
 }
 
 #email-addr{
 	position: relative;
-	top: 100px;
-	left: -320px;
-	width: 30%
+	top: -20px;
+	left: -170px;
+	width: 20%;
 }
 
 #email-head{
 	position: relative;
-	top: 100px;
-	left: -330px;
-	width: 30%;
+	top: -20px;
+	left: -170px;
+	width: 20%;
 }
 
 
 #github{
-	display: none;
 	position: relative;
-	top: 100%;
-	left: 50%;
+	top: 400px;
 	transform: translate(-50%, -50%);
 	animation: all 1s;
 	height: 60px;
@@ -201,7 +202,7 @@
 }
 
 #github:hover{
-	top: 290%;
+	top: 390px;
 }
 
 .contact-icon{
