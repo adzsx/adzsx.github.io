@@ -1,0 +1,43 @@
+#info-xcrack{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+#docs{
+    font-size: 20px;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hash-title{
+    position: absolute;
+    left: 20%;
+    top: 350%;
+    transform: translate(-50%, -50%);
+}
+
+#hash-doc{
+    position: absolute;
+    left: 50%;
+    top: 500%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+}
+
+#hash-example{
+    background-color: var(--bg-light);
+    color: var(--text2)
+}
+
+
+@media only screen and (max-width: 600px) {
+    #info-xcrack{
+        width: 90%;
+    }
+}
