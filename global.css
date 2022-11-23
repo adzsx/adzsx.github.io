@@ -10,9 +10,10 @@
 	--bg: #16161e; 
 	--bg-light: #1a1b26;
 	--text: #ffffff;
-	--title: #00afbe;
+	--text2: #3d59a1;
+	--title: #7aa2f7;
 	--hover: #363850;
-	--link: #00afbe;
+	--link: #7aa2f7;
 
 	/*IDK
 	--bg: #121212;
@@ -56,6 +57,11 @@ html, body{
 	font-size: 42px;
 	text-align: center;
 	top: 5rem
+}
+
+.sub-title{
+	color: var(--title);
+	font-size: 30px;
 }
 
 .link{
