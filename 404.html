@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="stylesheet" href="404.css">
+    <link rel="icon" href="./images/neon-io.svg">
+</head>
+<body>
+    <main id="main">
+        <h class="title" id="meltdown">CRITICAL ERROR DETECTED</h>
+    </main>
 
+    <script>
+function shutdown() {
+  let seconds = 5;
+
+  const countdownInterval = setInterval(() => {
+    if (seconds > 0) {
+      document.getElementById('meltdown').innerHTML = `SERVER SHUTDOWN IN ${seconds} SECONDS`;
+      seconds--;
+    } else {
+      clearInterval(countdownInterval);
+      document.getElementById('meltdown').innerHTML = 'SERVERS SHUTTING DOWN...';
+
+      const randomDelay = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
+      setTimeout(() => {
+        document.getElementById('meltdown').style.color = '#000000';
+        document.getElementById('meltdown').style.backgroundColor = '#000000';
+        document.html.style.backgroundColor = '#000000';
+        document.getElementById('main').style.color = '#000000';
+        document.getElementById('main').style.backgroundColor = '#000000';
+
+        setTimeout(() => {
+          document.getElementById('meltdown').innerHTML = 'SERVERS SHUT DOWN';
+        }, 5000);
+      }, randomDelay);
+    }
+  }, 1300);
+}
+
+shutdown()
+    </script>
+</body>
+</html>
