@@ -9,36 +9,37 @@
     <link rel="icon" href="./images/neon-io.svg">
 </head>
 <body>
-    <main id="main">
-        <h class="title" id="meltdown">CRITICAL ERROR DETECTED</h>
-    </main>
+    <h class="title" id="meltdown" style="width: 600px;">CRITICAL ERROR DETECTED&NewLine;(error id: 404)</h>
+
+
+    <!--<a href="https://adzsx.github.io" style="display: none;" id="reboot"><img src="./images/neon-io.svg" height="200px" alt="reboot"></a>-->
 
     <script>
 function shutdown() {
-  let seconds = 5;
+  let seconds = 5
 
   const countdownInterval = setInterval(() => {
     if (seconds > 0) {
-      document.getElementById('meltdown').innerHTML = `SERVER SHUTDOWN IN ${seconds} SECONDS`;
-      seconds--;
+      document.getElementById('meltdown').innerText = `SERVER SHUTDOWN IN ${seconds} SECONDS`
+      seconds--
     } else {
-      clearInterval(countdownInterval);
-      document.getElementById('meltdown').innerHTML = 'SERVERS SHUTTING DOWN...';
+      clearInterval(countdownInterval)
+      document.getElementById('meltdown').innerText = 'SERVERS SHUTTING DOWN...'
 
-      const randomDelay = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000;
+      const randomDelay = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000
       setTimeout(() => {
-        document.getElementById('meltdown').style.color = '#000000';
-        document.getElementById('meltdown').style.backgroundColor = '#000000';
-        document.html.style.backgroundColor = '#000000';
-        document.getElementById('main').style.color = '#000000';
-        document.getElementById('main').style.backgroundColor = '#000000';
+        document.getElementById('meltdown').style.color = '#000000'
+        document.getElementById('meltdown').style.backgroundColor = '#000000'
+        document.getElementById('meltdown').innerText = ''
+        document.getElementById("reboot").style.display = "block"
+
 
         setTimeout(() => {
-          document.getElementById('meltdown').innerHTML = 'SERVERS SHUT DOWN';
-        }, 5000);
-      }, randomDelay);
+          document.getElementById('meltdown').innerText = ''
+        }, 5000)
+      }, randomDelay)
     }
-  }, 1300);
+  }, 1300)
 }
 
 shutdown()
