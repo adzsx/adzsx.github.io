@@ -5,44 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404</title>
-    <link rel="stylesheet" href="404.css">
+    <link rel="stylesheet" href="404/404.css">
+    <script defer src="404/404.js"></script>
+
     <link rel="icon" href="./images/neon-io.svg">
 </head>
 <body>
-    <h class="title" id="meltdown" style="width: 600px;">CRITICAL ERROR DETECTED&NewLine;(error id: 404)</h>
 
+  <div id="shutdown">
+    <h class="title" id="meltdown">CRITICAL ERROR DETECTED (id: 404)</h>
+  </div>
 
-    <!--<a href="https://adzsx.github.io" style="display: none;" id="reboot"><img src="./images/neon-io.svg" height="200px" alt="reboot"></a>-->
+    <div id="reboot">
+      <h class="title" id="title">press to restart the server</h>
+      <button id="restart-btn"><img src="./images/neon-io.svg" height="300vh"></button>
+    </div>
+  
+    <div id="notFound">
+      <h class="title" id="nfTextl">4</h><img id="io" src="./images/io.svg" height="500px"><h class="title" id="nfTextr">4</h>
+      <p id="page">page not found</p>
+    </div>
 
-    <script>
-function shutdown() {
-  let seconds = 5
-
-  const countdownInterval = setInterval(() => {
-    if (seconds > 0) {
-      document.getElementById('meltdown').innerText = `SERVER SHUTDOWN IN ${seconds} SECONDS`
-      seconds--
-    } else {
-      clearInterval(countdownInterval)
-      document.getElementById('meltdown').innerText = 'SERVERS SHUTTING DOWN...'
-
-      const randomDelay = Math.floor(Math.random() * (5000 - 1000 + 1)) + 1000
-      setTimeout(() => {
-        document.getElementById('meltdown').style.color = '#000000'
-        document.getElementById('meltdown').style.backgroundColor = '#000000'
-        document.getElementById('meltdown').innerText = ''
-        document.getElementById("reboot").style.display = "block"
-
-
-        setTimeout(() => {
-          document.getElementById('meltdown').innerText = ''
-        }, 5000)
-      }, randomDelay)
-    }
-  }, 1300)
-}
-
-shutdown()
-    </script>
 </body>
 </html>

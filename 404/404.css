@@ -15,7 +15,7 @@ html, body{
 	font-family: 'Source Code Pro', monospace;
 	background-color: #000000;
     color: #ffffff;
-	width: 100%;
+	width: 99.8%;
 	scroll-behavior: smooth;
 	padding: 0;
 	text-align: center;
@@ -30,4 +30,34 @@ html, body{
 	font-size: 42px;
 	text-align: center;
 	top: 5rem
+}
+
+#restart-btn{
+	position: absolute;
+	color: #000000;
+	background-color: #000000;
+	border-style: none;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+#nfTextl{
+	font-size: 300px;
+	left: 3%
+}
+
+#nfTextr{
+	font-size: 300px;
+	right: 3%;
+}
+
+#io{
+	transform: translateY(47%);
+}
+
+#page{
+	font-size: 30px;
 }
