@@ -1,1 +1,0 @@
-**<a align="center" href="https://adzsx.github.io">My personal website</a>**
