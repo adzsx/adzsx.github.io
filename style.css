@@ -282,8 +282,15 @@
 		display: none;
 	}
 
-	.page-content,  #home-content{
+	.page-content{
 		width: 100%;
+		font-size: 25px;
+		position: relative;
+		text-align: center;
+	}
+
+	#home-content{
+		width: 90%;
 		font-size: 25px;
 		position: relative;
 		text-align: center;
