@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404</title>
-    <link rel="stylesheet" href="./404.css">
-    <link rel="stylesheet" href="global.css">
     <script defer src="404/404.js"></script>
 
     <link rel="icon" href="./images/neon-io.svg">
@@ -17,5 +15,87 @@
       <p id="page">page not found</p>
       <a href="https://adzsx.github.io" class="link" id="return">Click here to return to the home page</a>
     </div>
+  
+    <style>
+:root{
+	/*Dracula color scheme
+	--bg: #282a36;
+	--bg-light: #44475a;
+	--text: #f8f8f2;
+	--title: #8be9fd;
+	*/
+
+	/*Tokyo night scheme*/
+	--bg: #16161e; 
+	--bg-light: #1a1b26;
+	--text: #ffffff;
+	--text2: #3d59a1;
+	--title: #7aa2f7;
+	--hover: #363850;
+	--link: #7aa2f7;
+
+	/*IDK
+	--bg: #121212;
+	--bg-light: #212121;
+	--text: #ffffff;
+	--title: #00c9db;
+	--hover: #353535;
+	--link: #005fdb;
+	*/
+
+}
+
+html, body{
+	font-family: 'Source Code Pro', monospace;
+	color: var(--text);
+	background-color: var(--bg);
+	width: 100%;
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	align-items: center;
+	animation: all 0.5s;
+}
+.nftitle{
+	position: relative;
+	text-align: center;
+	color: var(--text);
+	font-size: 42px;
+	text-align: center;
+	top: 5rem
+}
+
+
+#nfTextl{
+	font-size: 300px;
+	left: 3%
+}
+
+#nfTextr{
+	font-size: 300px;
+	right: 3%;
+}
+
+#io{
+	transform: translateY(47%);
+}
+
+#page{
+	font-size: 30px;
+}
+
+#return{
+	font-size: 15px;
+}
+
+.link{
+	position: relative;
+	color: var(--link);
+	text-decoration: none;
+	font-size: 20px;
+}
+
+    </style>
 </body>
 </html>
