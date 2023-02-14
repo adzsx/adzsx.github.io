@@ -226,6 +226,28 @@
 	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
 }
 
+#pgp-btn{
+	position: absolute;
+	left: 14.5%;
+	top: 510px;
+	transform: translate(-50%, -50%);
+	height: 100px;
+	width: 250px;
+	font-size: 20px;
+	border-radius: 10px;
+	background-color: var(--link);
+	text-decoration: none;
+	color: #000;
+}
+
+#pgp{
+	width: 250px;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -50%);
+}
+
 @media only screen and (max-width: 1000px) {
 	#form{
 		position: absolute;
@@ -270,6 +292,21 @@
 		width: 80%;
 		transform: translate(-50%, -50%);
 	}
+
+	#pgp-btn{
+		position: absolute;
+		left: 50%;
+		top: 735px;
+		transform: translate(-50%, -50%);
+		height: 100px;
+		width: 64%;
+		font-size: 20px;
+		border-radius: 10px;
+		background-color: var(--link);
+		text-decoration: none;
+		color: #000;
+	}
+
 	
 }
 
@@ -342,6 +379,20 @@
 		left: 50%;
 		width: 90%;
 		transform: translate(-50%, -50%);
+	}
+
+	#pgp-btn{
+		position: absolute;
+		left: 50%;
+		top: 730px;
+		transform: translate(-50%, -50%);
+		height: 100px;
+		width: 90%;
+		font-size: 20px;
+		border-radius: 10px;
+		background-color: var(--link);
+		text-decoration: none;
+		color: #000;
 	}
 
 }
