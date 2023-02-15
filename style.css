@@ -205,20 +205,28 @@
 	top: 900px;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	animation: all 1s;
-	height: 60px;
-	width: 60px;
-	border-radius: 10px;
-	transition: all 0.5s;
-	text-decoration: none;
+	height: 150px;
 }
 
-#github:hover{
-	top: 890px;
-}
-
-.contact-icon{
+#github-icon{
 	filter: invert(100%) sepia(15%) saturate(1348%) hue-rotate(274deg) brightness(123%) contrast(110%);
+}
+
+
+#hacker1{
+	position: absolute;
+	top: 900px;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	height: 150px;
+}
+
+#hackthebox{
+	position: absolute;
+	top: 900px;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	height: 150px;
 }
 
 
@@ -393,6 +401,14 @@
 		background-color: var(--link);
 		text-decoration: none;
 		color: #000;
+	}
+
+	#github{
+		left: 40%
+	}
+
+	#hacker1{
+		left: 60%;
 	}
 
 }
