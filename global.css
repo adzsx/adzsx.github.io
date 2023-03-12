@@ -68,7 +68,14 @@ html, body{
 	position: relative;
 	color: var(--link);
 	text-decoration: none;
-	font-size: 20px;
+	transition: all 0.25s;
+}
+
+.link:hover{
+	
+	position: relative;
+	color: var(--text);
+	text-decoration: none;
 }
 
 
