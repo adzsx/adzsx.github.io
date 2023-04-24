@@ -96,7 +96,15 @@
 #xcrack{
 	position: absolute;
 	top: 300px;
-	left: 50%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+
+}
+
+#dirsgover{
+	position: absolute;
+	top: 300px;
+	left: 40%;
 	transform: translate(-50%, -50%);
 
 }
