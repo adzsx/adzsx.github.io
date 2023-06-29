@@ -111,6 +111,10 @@ ul{
 	height: 10%;
 }
 
+#contact-title{
+	font-size: 50px;
+}
+
 #form{
 	position: relative;
 	left: -130px;
@@ -150,7 +154,7 @@ ul{
 
 #icons{
 	position: absolute;
-	top: 900px;
+	top: 300%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 150px;
@@ -208,19 +212,18 @@ ul{
 	left: 14.5%;
 	top: 510px;
 	transform: translate(-50%, -50%);
-	height: 100px;
-	width: 250px;
+	height: 40px;
+	width: 80px;
 	font-size: 20px;
-	border-radius: 10px;
+	border-radius: 6px;
 	background-color: var(--bg);
 	text-decoration: none;
 	color: #ffffff;
 }
 
 #pgp{
-	width: 250px;
-	position: absolute;
-	left: 50%;
-	top: 30%;
-	transform: translate(-50%, -50%);
+	font-size: 15px;
+	text-align: center;
+	position: relative;
+	top: -%;
 }
