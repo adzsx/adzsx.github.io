@@ -1,7 +1,7 @@
 #info-xcrack{
     font-size: 30px;
     position: absolute;
-    top: 20%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
@@ -15,13 +15,6 @@
     height: 50px;
 	margin-bottom: 30px;
 	filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(100%) contrast(112%);
-}
-
-#desc{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 #crack-title{
