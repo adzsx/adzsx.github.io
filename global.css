@@ -1,44 +1,22 @@
 :root{
-	/*Dracula color scheme
-	--bg: #282a36;
-	--bg-light: #44475a;
-	--text: #f8f8f2;
-	--title: #8be9fd;
-	*/
 
-	/*Tokyo night scheme*/
-	--bg: #16161e; 
-	--bg-light: #1a1b26;
+	--bg: #000000; 
+	--bg-light: #16161a;
 	--text: #ffffff;
-	--text2: #3d59a1;
-	--title: #7aa2f7;
-	--hover: #363850;
-	--link: #7aa2f7;
+	--text2: #ffffff;
+	--title: #ffffff;
+	--hover: #18191d;
+	--link: #8c00ff;
+	--link-hover: #ff0000;
 
-	/*IDK
-	--bg: #121212;
-	--bg-light: #212121;
-	--text: #ffffff;
-	--title: #00c9db;
-	--hover: #353535;
-	--link: #005fdb;
-	*/
+
+	
 
 }
 
-main{
-	margin-left: 5rem;
-}
 
-@media only screen and (max-width: 600px) {
-	main{
-		margin-left: 0px;
-	}
-}
-
- 
 html, body{
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'Kanit', sans-serif;
 	color: var(--text);
 	background-color: var(--bg);
 	width: 100%;
@@ -52,11 +30,20 @@ html, body{
 
 .title{
 	position: relative;
+
+	background-color: #f3ec78;
+
+    background-image: linear-gradient(45deg, #ff0000, #4400ff);
+    background-size: 100%;
+	background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+
+	font-size: 100px;
 	text-align: center;
-	color: var(--title);
-	font-size: 42px;
-	text-align: center;
-	top: 5rem
+	top: 5rem;
 }
 
 .sub-title{
@@ -74,26 +61,17 @@ html, body{
 .link:hover{
 	
 	position: relative;
-	color: var(--text);
+	color: var(--link-hover);
 	text-decoration: none;
 }
 
-
-button{
-	position: relative;
-	background-color: var(--title);
-	color: var(--bg);
-	font-family: 'Source Code Pro', monospace;
-	border-radius: 30px;
-	border: none;
+.button{
+	background-color: var(--bg);
+	border: 2px;
+	border-style: solid;
+	border-radius: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-	.title{
-		font-size: 36px;
-	}
-
-	.link{
-		font-size: 15px;
-	}
+.button:hover{
+	background-color: var(--hover);
 }

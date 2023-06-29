@@ -1,14 +1,12 @@
 /* Global page rules */
 
-.page{
+section{
 	position: relative;
 	min-height: 100vh;
 	scroll-snap-type: y mandatory;
 	text-align: center;
 	align-items: center;
-}
 
-.page-content{
 	position: relative;
 	overflow: scroll;
 	font-size: 20px;
@@ -20,94 +18,34 @@
 }
 
 
-/* Navbar */
-
-.navbar{
-	width: 5rem;
-	height: 100vh;
-	position: fixed;
-	background: var(--bg-light);
-	display: flex;
-	animation: all 2s;
-	animation-duration: all 2s;
-}
-
-.nav-icon{
-	height: 50px;
-	margin-bottom: 30px;
-	filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(100%) contrast(112%);
-}
-
-.nav-icon:hover{
-	transform: translate(0, -5px);
-	filter: invert(67%) sepia(14%) saturate(9%) hue-rotate(314deg) brightness(92%) contrast(90%);
-}
-
-.nav-icon:active{
-	transform: translate(0, 5px);
-	filter: invert(18%) sepia(0%) saturate(0%) hue-rotate(223deg) brightness(100%) contrast(90%);
-}
-
-.navbar-items{
-	list-style: none;
-	padding: 0;
-	margin: auto;
-	display: block;
-	position: absolute;
-	margin-top: 25px;
-	margin-bottom: 20px;
-	flex-direction: column;
-	align-items: center;
-	animation: all 2s;
-	animation-duration: all 2s;
-	transition: all 0.5s;
-}
-
-
-
-/* Start page content */
-
+/* Home page */
 #home-content{
 	position: relative;
-    width: 40%;
+    width: 50%;
 	color: var(--text);
 	font-size: 30px;
 	height: 100%;
-	top: 100px;
+
 	text-decoration: none;
 	position: relative;
+	top: 100px;
 	left: 50%;
 	transform: translate(-50%, 0%);
 }
 
+/* Skills page */
 
-
-.small-title{
-	font-size: 40px;
-	font-weight: bold;
-	height: 10px;
+ul{
+	list-style-type: circle;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	font-size: 30px;
 }
-
-
 
 
 /* Projects page */
-
-#xcrack{
-	position: absolute;
-	top: 300px;
-	left: 60%;
-	transform: translate(-50%, -50%);
-
-}
-
-#dirsgover{
-	position: absolute;
-	top: 300px;
-	left: 40%;
-	transform: translate(-50%, -50%);
-
-}
 
 .project{
 	width: 330px;
@@ -143,31 +81,34 @@
 	top: 20px;
 }
 
+#dirsgover{
+	position: absolute;
+	top: 300px;
+	left: 30%;
+	transform: translate(-50%, -50%);
+	border-color: #ff0000;
+}
+
+#xcrack{
+	position: absolute;
+	top: 300px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-color: #ff00ff;
+}	
+
+#gwire{
+	position: absolute;
+	top: 300px;
+	left: 70%;
+	transform: translate(-50%, -50%);
+	border-color: #0000ff;
+}
+
 
 /* Contact page rules */
-
-#email{
-	position: relative;
-}
-
-.input{
-	position: relative;
-	top: 100px;
-	background-color: var(--bg-light);
-	color: var(--text);
-	border: none;
-	height: 50px;
-	font-size: 20px;
-	border-radius: 10px;
-	transition: all 0.5s;
-}
-
-.input::placeholder{
-	color: var(--text)
-}
-
-.input:hover{
-	background-color: var(--hover);
+#contact{
+	height: 10%;
 }
 
 #form{
@@ -217,38 +158,50 @@
 	
 }
 
-
-#github{
-	position: relative;
-	right: 0%;
-	transform: translate(-50%, -50%);
-	text-decoration: none;
+.contact-form{
+	margin-left: 40px;
+	height: 30px;
+	width: 30px;
 }
-
-#hacker1{
-	position: relative;
-	right: 10%;
-	transform: translate(-50%, -50%);
-	text-decoration: none;
-}
-
 
 #github-icon{
 	filter: invert(100%) sepia(15%) saturate(1348%) hue-rotate(274deg) brightness(123%) contrast(110%);
 }
 
-
-#hackthebox{
+/* 
+#github{
 	position: relative;
-	left: 10%;
+	right: -5%;
 	transform: translate(-50%, -50%);
 	text-decoration: none;
 }
 
-
-#email-send-img{
-	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(201deg) brightness(106%) contrast(106%);
+#hackthebox{
+	position: relative;
+	right: -10%;
+	transform: translate(-50%, -50%);
+	text-decoration: none;
 }
+
+#mastodon{
+	position: relative;
+	right: -15%;
+	transform: translate(-50%, -50%);
+	text-decoration: none;
+}
+
+#mail{
+	position: relative;
+	right: 25%;
+	top: 15%;
+	transform: translate(-50%, -50%);
+	background-color: #000000;
+	border: none;
+}
+
+#mail-icon{
+	filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(100%) contrast(112%);
+} */
 
 #pgp-btn{
 	position: absolute;
@@ -259,9 +212,9 @@
 	width: 250px;
 	font-size: 20px;
 	border-radius: 10px;
-	background-color: var(--link);
+	background-color: var(--bg);
 	text-decoration: none;
-	color: #000;
+	color: #ffffff;
 }
 
 #pgp{
@@ -270,161 +223,4 @@
 	left: 50%;
 	top: 30%;
 	transform: translate(-50%, -50%);
-}
-
-@media only screen and (max-width: 1000px) {
-	#form{
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 80%;
-		height: 300px;
-	}
-
-	#email-content{
-		position: absolute;
-		width: 80%;
-		height: 190px;
-		top: 500px;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	
-	}
-	
-	#email-send{
-		height: 150px;
-		width: 80%;
-		position: absolute;
-		top: 690px;
-		left: 50%;
-		transform: translate(-50%, -50%);
-
-	}
-	
-	#email-addr{
-		position: absolute;
-		top: 300px;
-		left: 50%;
-		width: 80%;
-		transform: translate(-50%, -50%);
-	}
-	
-	#email-head{
-		position: absolute;
-		top: 365px;
-		left: 50%;
-		width: 80%;
-		transform: translate(-50%, -50%);
-	}
-
-	#pgp-btn{
-		position: absolute;
-		left: 50%;
-		top: 735px;
-		transform: translate(-50%, -50%);
-		height: 100px;
-		width: 64%;
-		font-size: 20px;
-		border-radius: 10px;
-		background-color: var(--link);
-		text-decoration: none;
-		color: #000;
-	}
-
-	
-}
-
-@media only screen and (max-width: 600px) {
-	.project{
-		width: 90%;
-	}
-
-	.navbar{
-		display: none;
-	}
-
-	.page-content{
-		width: 100%;
-		font-size: 25px;
-		position: relative;
-		text-align: center;
-	}
-
-	#home-content{
-		width: 90%;
-		font-size: 25px;
-		position: relative;
-		text-align: center;
-	}
-
-	.text, .project-title, .small-title, .project{
-		font-size: 30px;
-	}
-
-	#form{
-		position: absolute;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%;
-		height: 300px;
-	}
-
-	#email-content{
-		position: absolute;
-		width: 90%;
-		height: 190px;
-		top: 500px;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	
-	}
-	
-	#email-send{
-		height: 150px;
-		width: 90%;
-		position: absolute;
-		top: 690px;
-		left: 50%;
-		transform: translate(-50%, -50%);
-
-	}
-	
-	#email-addr{
-		position: absolute;
-		top: 300px;
-		left: 50%;
-		width: 90%;
-		transform: translate(-50%, -50%);
-	}
-	
-	#email-head{
-		position: absolute;
-		top: 365px;
-		left: 50%;
-		width: 90%;
-		transform: translate(-50%, -50%);
-	}
-
-	#pgp-btn{
-		position: absolute;
-		left: 50%;
-		top: 730px;
-		transform: translate(-50%, -50%);
-		height: 100px;
-		width: 90%;
-		font-size: 20px;
-		border-radius: 10px;
-		background-color: var(--link);
-		text-decoration: none;
-		color: #000;
-	}
-
-	#github{
-		left: 40%
-	}
-
-	#hacker1{
-		left: 60%;
-	}
-
 }

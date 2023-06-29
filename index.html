@@ -5,90 +5,98 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="global.css">
+	<link rel="stylesheet" href="../../global.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
-	<link rel="icon" href="./images/neon-io.svg">
-	<title>Personal website</title>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+	
+	<link rel="icon" href="./images/icons/game-of-life-cropped.png">
+	<title>adzsx</title>
 </head>
 <body>
 
-	<nav class="navbar">
-		<ul class="navbar-items">
-			<a href="#home"><img src="images/icons/house.svg" class="nav-icon"></a>
-			<a href="#projects"><img src="images/icons/folder.svg" class="nav-icon"></a>
-			<a href="#contact"><img src="images/icons/mail.svg" class="nav-icon"></a>
-		</ul>
-	</nav>
 
-
-	<main>
-		<section id="home" class="page">
-			<div class="page-content">
-	
+	<main> 
+		<section id="home">
 				<h class="title" id="home-title"><b>Welcome</b></h>
 	
 				<div class="text" id="home-content">
-					<br>
-					<p class="small-title">About</p>
-					I am a student interested in cyber security and programming.
+					Hi, I am adzsx, a student interested in programming and cybersecurity.<br>
+					I like to write security tools, solve CTFs and spend time learning about new technologies. 
 				</div>
-	
-			</div>
-	
 		</section>
 
+		<section id="skills">
+			<h class="title" id="home-title"><b>My languages, tools and skills</b></h>
+				<ul>
+					<li id="go" class="skill">Golang</li>
+					<li id="py" class="skill">Python</li>
+					<li id="web" class="skill">HTML/CSS/JS</li>
+					<li id="bash" class="skill">Bash</li>
+					<li id="linux" class="skill">Linux</li>
+					<li id="net" class="skill">Networking</li>
+				</ul>
+			<div class="text" id="home-content">
+				
+			</div>
+	</section>
 
-		<section id="projects" class="page">
-			<div class="page-content">
-				<h class="title"><b>Projects</b></h>
+
+
+		<section id="projects">
+				<h class="title">Projects</h>
  
-			<a href="./projects/xcrack/">
-				<div class="project" id="xcrack">
+				<a href="./projects/xcrack/">
+					<div class="project button" id="xcrack">
 						<p class="project-title">XCrack</p>
-						<img id="xcrack-icon" class="project-icon" src="./images/projects/lock-open.svg" height="50" width="50">
-				</div>
-			</a>	
+						<img class="project-icon" src="./images/projects/lock-open.svg" height="50" width="50">
+					</div>
+				</a>	
 
-			<a href="./projects/dirsgover/">
-				<div class="project" id="dirsgover">
+				<a href="./projects/dirsgover/">
+					<div class="project button" id="dirsgover">
 						<p class="project-title">Dirsgover</p>
-						<img id="dirsgover-icon" class="project-icon" src="./images/projects/dir.svg" height="50" width="50">
-				</div>
-			</a>	
+						<img class="project-icon" src="./images/projects/dir.svg" height="50" width="50">
+					</div>
+				</a>	
 
-			</div>
+				<a href="./projects/gwire/">
+					<div class="project button" id="gwire">
+						<p class="project-title">gwire</p>
+						<img class="project-icon" src="./images/projects/lock-closed.svg" height="50" width="50">
+					</div>
+				</a>	
+
+				
 		</section>
 
-		<section id="contact" class="page">
-			<div class="page-content">
-				<h class="title"><b>Contact</b></h>
 
-					<form action="https://formsubmit.co/adzsx@proton.me" method="POST" id="form">
-						<input type="Header" name="Header" required placeholder=" Header" class="input" id="email-head">
-						<input type="email" name="E-Mail address" required placeholder=" Your mail" class="input" id="email-addr">
-						<textarea type="content" name="Content" placeholder=" Write something..." class="input" id="email-content"></textarea>
-						<button type="submit" class="input" id="email-send"><img src="./images/icons/send.svg" height="100px" id="email-send-img"></button>
-				   </form> 
 
-				   <div id="icons">
-						<a class="contact-form" id="hacker1" href="https://hackerone.com/ad-zsx">
-							<img src="./images/icons/h1.png" height="50px" id="hacker1-icon" class="icon">
-						</a>
+		<section id="contact">
+				<h class="title">Contact</h>
 
+					<a id="pgp-btn" href="./pgp.txt" class="button">
+						<p id="pgp"><b>PGP Key</b></p>
+					</a>
+
+					<div id="icons">
 						<a class="contact-form" id="github" href="https://github.com/adzsx">
-							<img src="./images/icons/github.svg" height="50px" id="github-icon" class="icon">
+							<img src="./images/icons/github.svg" height="40px" id="github-icon" class="icon">
 						</a>
 
-						<a class="contact-form" id="hackthebox" href="https://app.hackthebox.com/profile/1435011">
-							<img src="./images/icons/hackthebox.svg" height="50px" id="hackthebox-icon" class="icon">
+						<a class="contact-form" id="hackthebox" href="https://app.hackthebox.com/users/1520866">
+							<img src="./images/icons/hackthebox.svg" height="40px" id="hackthebox-icon" class="icon">
+						</a>
+
+						<a class="contact-form" id="mastodon" href="https://infosec.exchange/@adzsx">
+							<img src="./images/icons/mastodon.svg" height="40px" id="mastodon-icon" class="icon">
+						</a>
+
+						<a class="contact-form" id="mail" href="mailto: adzsx@proton.me" height="40px">
+							<img src="./images/icons/mail.png" height="40px" id="mail-icon" class="icon">
 						</a>
 				   </div>
 
-
-					<a id="pgp-btn" href="./pgp.txt"><p id="pgp">PGP Signature</p></a>
-			</div>
 		</section>
 	</main>
 
