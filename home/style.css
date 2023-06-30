@@ -1,0 +1,127 @@
+:root{
+    --bg:#131418;
+    --light-bg: #1d1e24;
+    --hover: #242630;
+    --active: #2d2e36;
+
+    --text: #ffffff;
+    --placeholder: #393644;
+    --bright: #ccffff;
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+#title{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 80px;
+    color: var(--text);
+}
+
+.list{
+    list-style-type: none;
+    transform: translate(-20px, 0);
+}
+
+li{
+    margin-bottom: 5px;
+}
+
+.group{
+    height: 600px;
+    width: 400px;
+    text-align: center;
+    margin-left: 50px;
+    transform: translate(-25px, 0);
+}
+
+#content{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    
+}
+
+img {
+    width: 40%;
+    display:block;
+    margin: 0 auto;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(5534%) hue-rotate(317deg) brightness(111%) contrast(71%) opacity(100%);
+}
+
+button {
+    width: 130px;
+    height: 130px;
+    box-shadow: 5px 5px 10px black;
+    background: var(--light-bg);
+    border: 0;
+    transition: 0.3s ease;
+    border-radius: 10px;
+    padding: 0px;
+    cursor:pointer;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    transform: translate(-5px, -10px);
+    background: var(--hover);
+    box-shadow: 10px 10px 20px black;
+    transition: 0.3s ease;
+}
+
+button:active{
+    transform: translate(-5px, 0px);
+    background: var(--active);
+    box-shadow: 10px 10px 20px black;
+    transition: 0.1s ease;
+}
+
+.searchbox{
+    background-color: var(--light-bg);
+    border: none;
+    height: 70px;
+    width: 80%;
+    padding-left: 20px;
+    border-radius: 10px;
+    color: var(--text);
+    font-size: 30px;
+
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+
+
+
+.searchbox:focus {
+    background: var(--hover);
+    position: absolute;
+    top: 22%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 35px var(--bright);
+    outline: none;
+
+    
+    box-shadow: 10px 10px 20px black;
+    transition: 0.3s ease;
+}
+
+.searchbox::placeholder{
+    color: var(--placeholder);
+    font-size: 30px;
+}
