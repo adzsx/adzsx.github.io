@@ -125,3 +125,8 @@ button:active{
     color: var(--placeholder);
     font-size: 30px;
 }
+
+#bs{
+    position: relative;
+    top: -5px;
+}

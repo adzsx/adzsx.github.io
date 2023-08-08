@@ -81,80 +81,61 @@ ul{
 	top: 20px;
 }
 
-#dirsgover{
+/* #dirsgover{
 	position: absolute;
 	top: 300px;
 	left: 30%;
 	transform: translate(-50%, -50%);
 	border-color: #ff0000;
-}
+} */
 
 #xcrack{
 	position: absolute;
-	top: 300px;
-	left: 50%;
+	top: 350px;
+	left: 35%;
 	transform: translate(-50%, -50%);
 	border-color: #ff00ff;
 }	
 
 #gwire{
 	position: absolute;
-	top: 300px;
-	left: 70%;
+	top: 350px;
+	left: 65%;
 	transform: translate(-50%, -50%);
 	border-color: #0000ff;
 }
 
+@media only screen and (max-width: 1120px) {
+	#gwire{
+		left: 70%;
+	}
+
+	#xcrack{
+		left: 30%;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	#gwire{
+		left: 50%;
+		top: 500px;
+	}
+
+	#xcrack{
+		left: 50%;
+	}
+}
+
+
 
 /* Contact page rules */
-#contact{
-	height: 10%;
-}
 
-#contact-title{
-	font-size: 50px;
-}
-
-#form{
-	position: relative;
-	left: -130px;
-}
-
-#email-content{
-	position: absolute;
-	width: 70%;
-	height: 190px;
-	top: 300px;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
-}
-
-#email-send{
-	height: 260px;
-	width: 260px;
-	position: absolute;
-	top: 140px;
-	left: 86%;
-}
-
-#email-addr{
-	position: absolute;
-	top: 140px;
-	left: 50%;
-	width: 35%;
-}
-
-#email-head{
-	position: absolute;
-	top: 140px;
-	left: 15%;
-	width: 34%;
-}
 
 #icons{
 	position: absolute;
-	top: 300%;
+
+	
+	top: 320%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 150px;
@@ -162,10 +143,9 @@ ul{
 	
 }
 
-.contact-form{
-	margin-left: 40px;
-	height: 30px;
-	width: 30px;
+
+.icon{
+	margin-left: 30px;
 }
 
 #github-icon{
