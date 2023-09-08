@@ -9,14 +9,11 @@
 	--link: #8c00ff;
 	--link-hover: #ff0000;
 
-
-	
-
 }
 
 
 html, body{
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: var(--text);
 	background-color: var(--bg);
 	width: 100%;

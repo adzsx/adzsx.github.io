@@ -4,46 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
-    <script defer src="404/404.js"></script>
-
+    <title>404 not found</title>
     <link rel="icon" href="./images/neon-io.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="notFound">
-      <h class="nftitle" id="nfTextl">404</h>
-      <p id="page">page not found</p>
-      <a href="https://adzsx.github.io" class="link" id="return">Click here to return to the home page</a>
+    	<h id="nf">404</h>
+    	<p id="page">page not found<br><a id="return" href="https://adzsx.github.io" >Return to home</a></p>
+    	
     </div>
   
     <style>
 :root{
-	/*Dracula color scheme
-	--bg: #282a36;
-	--bg-light: #44475a;
-	--text: #f8f8f2;
-	--title: #8be9fd;
-	*/
-
-	/*Tokyo night scheme*/
-	--bg: #16161e; 
-	--bg-light: #1a1b26;
+	--bg: #000000; 
+	--bg-light: #16161a;
 	--text: #ffffff;
-	--text2: #3d59a1;
-	--title: #7aa2f7;
-	--hover: #363850;
-	--link: #7aa2f7;
-
-	/*IDK
-	--bg: #121212;
-	--bg-light: #212121;
-	--text: #ffffff;
-	--title: #00c9db;
-	--hover: #353535;
-	--link: #005fdb;
-	*/
+	--text2: #ffffff;
+	--title: #ffffff;
+	--hover: #18191d;
+	--link: #8c00ff;
+	--link-hover: #ff0000;
 
 }
+
 
 html, body{
 	font-family: 'Source Code Pro', monospace;
@@ -57,43 +43,42 @@ html, body{
 	align-items: center;
 	animation: all 0.5s;
 }
-.nftitle{
-	position: relative;
-	text-align: center;
-	color: var(--text);
-	font-size: 42px;
-	text-align: center;
-	top: 5rem
+
+#notFound{
+	gap: 3vh;
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr;
+	grid-template-rows: 5vw 25vw 10vh 5vh;
 }
 
 
-#nfTextl{
-	font-size: 300px;
-	left: 3%
+#nf{
+	grid-row: 2;
+
+	background-color: #f3ec78;
+
+	background-image: linear-gradient(45deg, #ff0000, #4400ff);
+	background-size: 100%;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent; 
+	-moz-text-fill-color: transparent;
+
+	font-size: 25vw;
 }
 
-#nfTextr{
-	font-size: 300px;
-	right: 3%;
-}
-
-#io{
-	transform: translateY(47%);
-}
 
 #page{
-	font-size: 30px;
+	grid-row: 3;
+	font-size: 5vh;
 }
 
 #return{
-	font-size: 15px;
-}
-
-.link{
-	position: relative;
+	font-size: 4vh;
 	color: var(--link);
 	text-decoration: none;
-	font-size: 20px;
 }
 
     </style>

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./style.css">
     <title>gwire</title>
     <link rel="icon" href="../../images/neon-io.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <a href="../../../"><img src="../../images/icons/house.svg" id="home-icon"></a>
@@ -15,14 +18,8 @@
     
     <h class="title"><b>gwire</b></h>
     <p id="info-gwire">
-        <h><b>Gwire is an encrypted, instant messaging service.</b></h><br>
 
-        <br>
-        The tool uses a chosen port to open a connection to another host. It also supportes muti-user-chat, meaning the host opens multiple ports and the clients connect to the host. If a message is sent by someone, the host will distribute it to other participants 
-
-
-    <button id="download"><img id="download-icon" src="../../images/icons/download-svgrepo-com.svg"></button>
-
-
+        gwire is a p2p, encrypted messaging application that uses RSA with 2048 bit keys and 256 bit AES to ensure safe communication. 
+        It works by opening a selected (range of) port(s) on a host to which the clients can connect to. Each client has 1 connection and the host has n connections for n hosts. 
     </body>
 </html>
