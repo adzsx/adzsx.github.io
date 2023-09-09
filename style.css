@@ -59,23 +59,41 @@ main{
 	grid-column-end: 5;
 }
 
-
-
 #icons{
-	grid-row: 6;
-	grid-column-start: 2;
-	grid-column-end: 4;
+	position: absolute;
+	top: 220%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	height: 200px;
+
+	display: flex;
+	flex-direction: row;
+	gap: 50px;
 }
+
 
 .icon{
-	margin-left: 40px;
-	margin-bottom: 10px;
 	position: relative;
-	left: -15px;
+	left: 25%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	height: 50px;
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(349deg) brightness(105%) contrast(101%);
 }
 
-#github-icon{
-	filter: invert(100%) sepia(15%) saturate(1348%) hue-rotate(274deg) brightness(123%) contrast(110%);
+
+.icon-link{
+	border-radius: 10px;
+	height: 100px;
+	width: 100px;
+	
+	background-color: #202020;
+	transition: 150ms;
+}
+
+#icons:hover > :not(:hover){
+	opacity: 0.2;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -110,14 +128,12 @@ main{
 	}
 
 	#icons{
-		grid-row: 8;
-		grid-column-start: 1;
-		grid-column-end: 5;
+		top: 280%;
 	}
 	
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 	main{
 		grid-template-rows: 40vh 50vh 40vh 20vh 20vh 25vh 25vh 25vh;
 	}
@@ -146,5 +162,28 @@ main{
 		width: 90vw;
 		height: 45vw;
 	}
+
+	#icons{
+		top: 280%;
+		gap: 10px;
+		
+	}
 	
+}
+
+@media only screen and (max-width: 500px) {
+	.icon{
+		position: relative;
+		left: 28%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		height: 40px;
+	}
+	
+	
+	.icon-link{
+		border-radius: 10px;
+		height: 70px;
+		width: 70px;
+	}
 }
