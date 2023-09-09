@@ -10,37 +10,57 @@
 #home-icon {
     position: absolute;
     left: 10%;
-    top: 10%;
-    transform: translate(-50%, -50%);
+    top: 50px;
     height: 50px;
 	margin-bottom: 30px;
 	filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(100%) contrast(112%);
 }
 
-#title{
-    font-size: 40px;
-}
-
-#gwire{
-    font-size: 25px;
-}
-
-#download{
+#github{
     position: relative;
-    top: 200px;
-    right: 400px;
-    font-size: 40px;
-    background: none;
-    
-    border-radius: 5px;
-    border-color: #ffffff;
+    top: 50px;
+    left: 50px;
+    height: 60px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(100%) contrast(112%);
 }
 
-#download:hover{
-    background-color: #ffffff;
-}
-
-#download-icon{
+.title{
     position: relative;
-    height: 100px;
+    top: 50px;
+    font-size: 100px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #info-gwire{
+        top: 60%;
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #info-gwire{
+        top: 70%;
+        width: 90%;
+    }
+
+    #github{
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 60px;
+        filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(100%) contrast(112%);
+    }
+}
+
+@media only screen and (max-height: 750px) and (max-width: 500px){
+    #github{
+        top: 35%;
+    }
+
+    #info-gwire{
+        top: 100%;
+        width: 90%;
+    }
 }
