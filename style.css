@@ -17,114 +17,66 @@ section{
 	justify-content: center;
 }
 
+main{
+	display: grid;
+	grid-template-columns: 25vw 25vw 25vw 25vw;
+	grid-template-rows: 50vh 50vh 50vh 25vh 25vh 25vh;
+	align-items: center;
+}
+
+#home-title{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	font-size: 100px;
+}
 
 /* Home page */
 #home-content{
-	position: relative;
-    width: 50%;
+	grid-column-start: 2;
+	grid-column-end: 4;
 	color: var(--text);
 	font-size: 30px;
 	height: 100%;
-
 	text-decoration: none;
-	position: relative;
-	top: 100px;
-	left: 50%;
-	transform: translate(-50%, 0%);
-}
-
-/* Skills page */
-
-ul{
-	list-style-type: circle;
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	transform: translate(-50%, 0%);
-	font-size: 30px;
 }
 
 
 /* Projects page */
 
-.project{
-	width: 330px;
-	height: 100px;
-	animation: all 1s;
-	background-color: var(--bg-light);
-	border-radius: 30px;
-	transition: all 0.5s;
-	text-decoration: none;
+#project-title{
+	grid-column-start: 2;
+	grid-column-end: 4;
+	font-size: 100px;
 }
-
-.project:hover{
-	transform: translate(0, -10px);
-	background-color: var(--hover);
-}
-
-.project:active{
-	transition: 0.05s;
-	transform: translate(0, 10px);
-}
-
-.project-title{
-	position: absolute;
-	width: 175px;
-	color: var(--text);
-	font-size: 30px;
-	left: 130px;
-}
-
-.project-icon{
-	position: absolute;
-	left: 50px;
-	top: 20px;
-}
-
-/* #dirsgover{
-	position: absolute;
-	top: 300px;
-	left: 30%;
-	transform: translate(-50%, -50%);
-	border-color: #ff0000;
-} */
 
 #xcrack{
-	position: absolute;
-	top: 350px;
-	left: 35%;
-	transform: translate(-50%, -50%);
-	border-color: #ff00ff;
-}	
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
 
 #gwire{
-	position: absolute;
-	top: 350px;
-	left: 65%;
-	transform: translate(-50%, -50%);
-	border-color: #0000ff;
+	grid-column-start: 3;
+	grid-column-end: 5;
 }
 
-@media only screen and (max-width: 1120px) {
-	#gwire{
-		left: 70%;
+
+@media only screen and (max-width: 1000px) {
+	#home-title{
+		grid-column-start: 1;
+		grid-column-end: 5;
 	}
 
-	#xcrack{
-		left: 30%;
+	#home-content{
+		grid-column-start: 1;
+		grid-column-end: 5;
+	}
+
+	#project-title{
+		grid-column-start: 1;
+		grid-column-end: 5;
 	}
 }
 
-@media only screen and (max-width: 850px) {
-	#gwire{
-		left: 50%;
-		top: 500px;
-	}
-
-	#xcrack{
-		left: 50%;
-	}
-}
 
 
 
@@ -132,20 +84,16 @@ ul{
 
 
 #icons{
-	position: absolute;
-
-	
-	top: 320%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	height: 150px;
-	width: 600px;
-	
+	grid-row: 6;
+	grid-column-start: 2;
+	grid-column-end: 4;
 }
 
-
 .icon{
-	margin-left: 30px;
+	margin-left: 40px;
+	margin-bottom: 10px;
+	position: relative;
+	left: -15px;
 }
 
 #github-icon{
