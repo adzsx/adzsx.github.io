@@ -1,75 +1,86 @@
-#info-xcrack{
-    font-size: 30px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
+main{
+	display: grid;
+	grid-template-columns: 25vw 25vw 25vw 25vw;
+	grid-template-rows: 25vh 50vh 30vh 25vh 25vh;
+	align-items: center;
 }
 
-#home-icon {
-    position: absolute;
-    left: 10%;
-    top: 50px;
-    height: 50px;
-	margin-bottom: 30px;
-	filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(100%) contrast(112%);
+.title{
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 100px;
 }
 
 #info-xcrack{
+    grid-column-start: 2;
+    grid-column-end: 4;
     font-size: 30px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
 }
 
 #github{
-    position: relative;
-    top: 50px;
-    left: 50px;
     height: 60px;
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(100%) contrast(112%);
 }
 
-.title{
-    position: relative;
-    top: 50px;
-    font-size: 100px;
+
+#downloads{
+    grid-row: 4;
+    grid-column-start: 0;
+    grid-column-end: 3;
+    width: 50vw;
+    height: 10vh;
 }
 
+th, td {
+    height: 50px;
+    border: 1px solid;
+    font-size: 20px;
+}
+
+th{
+    font-style: bold;
+    font-size: 25px;
+}
 
 @media only screen and (max-width: 1000px) {
     #info-xcrack{
-        top: 60%;
-        width: 90%;
+        grid-column-start: 1;
+        grid-column-end: 5;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    #info-xcrack{
-        top: 70%;
-        width: 90%;
+@media only screen and (max-width: 700px) {
+    #downloads{
+        grid-row: 3;
+        grid-column-start: 0;
+        grid-column-end: 2;
+        width: 100vw;
+        height: 10vh;
     }
 
+    .title{
+        font-size: 50px;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    #github-link, #github{
+        width: 40px;
+        grid-row: 1;
+        grid-column: 1;
+        margin-left: 5vw;
+    }
+
+    #info-xcrack{
+        font-size: 20px;
+        width: 90%;
+        margin-left: 4vw;
+    }
+
+
     #github{
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         height: 60px;
         filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(100%) contrast(112%);
-    }
-}
-
-@media only screen and (max-height: 750px) and (max-width: 500px){
-    #github{
-        top: 35%;
-    }
-
-    #info-xcrack{
-        top: 100%;
-        width: 90%;
     }
 }
