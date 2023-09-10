@@ -6,6 +6,7 @@ main{
 }
 
 .title{
+    color: #ff0000;
     grid-row: 1;
     grid-column-start: 2;
     grid-column-end: 4;
@@ -23,6 +24,9 @@ main{
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(189deg) brightness(100%) contrast(112%);
 }
 
+.download-link{
+    color: #ff0000;
+}
 
 #downloads{
     grid-row: 4;
