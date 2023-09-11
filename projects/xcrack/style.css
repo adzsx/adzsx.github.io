@@ -29,7 +29,7 @@ main{
 }
 
 #downloads{
-    grid-row: 4;
+    grid-row: 3;
     grid-column-start: 0;
     grid-column-end: 3;
     width: 50vw;
@@ -56,7 +56,7 @@ th{
 
 @media only screen and (max-width: 700px) {
     #downloads{
-        grid-row: 3;
+        grid-row: 4;
         grid-column-start: 0;
         grid-column-end: 2;
         width: 100vw;
