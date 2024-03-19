@@ -30,21 +30,21 @@ section{
 
 main{
 	display: grid;
-	grid-template-columns: 25vw 25vw 25vw 25vw;
-	grid-template-rows: 50vh 50vh 50vh 25vh 25vh 25vh;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	grid-template-rows: 50vh 50vh 50vh 25vh 45vh;
 	align-items: center;
 }
 
 #home-title{
 	grid-column-start: 2;
-	grid-column-end: 4;
+	grid-column-end: 5;
 	font-size: 100px;
 }
 
 /* Home page */
 #home-content{
 	grid-column-start: 2;
-	grid-column-end: 4;
+	grid-column-end: 5;
 	color: var(--text);
 	font-size: 30px;
 	height: 100%;
@@ -53,10 +53,14 @@ main{
 
 
 /* Projects page */
+.project{
+	width: 400;
+}
+
 
 #project-title{
 	grid-column-start: 2;
-	grid-column-end: 4;
+	grid-column-end: 5;
 	font-size: 100px;
 }
 
@@ -66,13 +70,19 @@ main{
 }
 
 #gwire{
-	grid-column-start: 3;
+	grid-column-start: 4;
+	grid-column-end: 6;
+}
+
+
+#webduck{
+	grid-column-start: 2;
 	grid-column-end: 5;
 }
 
 #icons{
 	position: absolute;
-	top: 220%;
+	top: 250%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 
@@ -110,32 +120,32 @@ main{
 @media only screen and (max-width: 1000px) {
 	#home-title{
 		grid-column-start: 1;
-		grid-column-end: 5;
+		grid-column-end: 6;
 	}
 
 	#home-content{
-		grid-column-start: 1;
+		grid-column-start: 2;
 		grid-column-end: 5;
 	}
 
 	#project-title{
 		grid-column-start: 1;
-		grid-column-end: 5;
+		grid-column-end: 6;
 	}
 
 	#xcrack{
 		grid-row: 6;
-		grid-column-start: 1;
+		grid-column-start: 2;
 		grid-column-end: 5;
 	}
 	
 	#gwire{
-		grid-column-start: 1;
+		grid-column-start: 2;
 		grid-column-end: 5;
 	}
 
 	main{
-		grid-template-rows: 50vh 50vh 50vh 25vh 25vh 25vh 25vh 25vh;
+		grid-template-rows: 50vh 50vh 50vh 35vh 35vh 35vh 35vh 35vh;
 	}
 
 	#icons{
