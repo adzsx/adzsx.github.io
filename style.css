@@ -144,6 +144,12 @@ main{
 		grid-column-end: 5;
 	}
 
+	#webduck{
+		grid-column-start: 2;
+		grid-column-end: 5;
+	}
+	
+
 	main{
 		grid-template-rows: 50vh 50vh 50vh 35vh 35vh 35vh 35vh 35vh;
 	}
@@ -154,8 +160,11 @@ main{
 	
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
 	main{
+		display: block;
+	}
+	/* main{
 		grid-template-rows: 40vh 50vh 40vh 20vh 20vh 25vh 25vh 25vh;
 	}
 
@@ -172,24 +181,31 @@ main{
 
 	#project-title{
 		font-size: 70px;
-	}
+	} */
 
-	#gwire-banner{
-		width: 90vw;
-		height: 45vw;
-	}
-
-	#xcrack-banner{
-		width: 90vw;
-		height: 45vw;
+	.banner{
+		padding-top: 50px;
 	}
 
 	#icons{
-		top: 280%;
+		top: 220%;
 		gap: 10px;
 		
 	}
 	
+}
+
+
+@media only screen and (max-height: 600px) {
+	main{
+		grid-template-rows: 50vh 50vh 50vh 35vh 50vh 35vh 35vh 35vh;
+	}
+}
+
+@media only screen and (max-width: 700px) and (max-height: 600px) {
+	#icons{
+		top: 250%;
+	}
 }
 
 @media only screen and (max-width: 500px) {
